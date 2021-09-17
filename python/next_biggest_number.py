@@ -9,11 +9,11 @@ def next_biggest_number(num):
     #TODO: Implement me!
 
     #For a given number, convert the number into string
-    #For all string characters, convert each character into an integer creating an array of single digit integers 
+    #For all string characters, convert each character into an integer creating a list of single digit integers 
     n = len(str(num))
     number = [int(x) for x in str(num)]
 
-    #Start from the farthest right digit of the array, find the smaller first digit next to it     
+    #Start from the farthest right digit of the list, find the smaller first digit next to it     
     for i in range(n-1,0,-1):
          if number[i] > number[i-1]:
              break
@@ -34,7 +34,7 @@ def next_biggest_number(num):
     #Swapping the above found smallest digit with (i-1)'th
     number[smallest],number[i-1] = number[i-1], number[smallest]
       
-    # x is the final number, in integer datatype
+    # x is the final number in integer datatype
     x = 0
     # Converting list upto i-1 into number
     for j in range(i):
@@ -45,7 +45,8 @@ def next_biggest_number(num):
     # converting the remaining sorted digits into number
     for j in range(n-i):
         x = x * 10 + number[j]
-      
+
+    #print or return the next biggest number  
     print (x)
 
     return x
