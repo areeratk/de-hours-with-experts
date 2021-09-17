@@ -1,4 +1,3 @@
-7986
 ============================= test session starts =============================
 platform win32 -- Python 3.7.3, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
 rootdir: C:\Users\areer\Desktop\de-hours-with-experts\python
@@ -15,4 +14,4 @@ test_nextbiggestnumber.py .............................................. [ 30%]
     return isinstance(x, collections.Callable)
 
 -- Docs: https://docs.pytest.org/en/stable/warnings.html
-======================= 150 passed, 1 warning in 0.21s ========================
+======================= 150 passed, 1 warning in 0.32s ========================
